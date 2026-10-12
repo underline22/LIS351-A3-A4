@@ -1,0 +1,352 @@
+/* =========================================================
+   A. Base / Page (Colors & Backgrounds + Spacing) 
+
+   -- the first letter of each comment is for easy searching from A - N, future me! --
+   ========================================================= */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f5f0eb;
+  color: #222222;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* Smooth scroll for the one-page nav links - neat trick from https://www.w3schools.com/cssref/pr_scroll-behavior.php */ 
+html {
+  scroll-behavior: smooth;
+}
+
+/* =========================================================
+  B.Header Layout (Layout)
+  Ensures site name top left, navigation top right
+   ========================================================= */
+.top_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #4a6b82;
+}
+
+/* =========================================================
+   C. Header Typography & Color (Typography + Colors)
+   ========================================================= */
+.top_header h1 {
+  color: #faf7f2;
+  font-size: 32px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+/* =========================================================
+   D. Navigation (Layout + Links)
+   ========================================================= */
+#navbar ul {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#navbar a {
+  color: #faf7f2;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 15px;
+  padding-bottom: 3px;
+  border-bottom: 2px solid transparent;
+}
+
+#navbar a:hover {
+  color: #87ceeb;
+  border-bottom-color: #87ceeb;
+}
+
+/* =========================================================
+   E. Hero Background (Colors & Backgrounds + Spacing)
+   City image with a dark overlay so the text is readable
+   ========================================================= */
+.home {
+  min-height: 460px;
+  padding: 60px 20px;
+  /* The linear-gradient is the dark overlay; the city image sits underneath it */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+                url('images/city.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* =========================================================
+   F. Hero Content Layout (Layout)
+   Welcome text, subtext, and button centered over the image
+   ========================================================= */
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+/* =========================================================
+   G. Hero Typography (Typography)
+   Headline, supporting text hierarchy
+   ========================================================= */
+.home h2 {
+  color: #faf7f2;
+  font-size: 56px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin: 0;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+.home p {
+  color: #faf7f2;
+  font-size: 22px;
+  font-weight: normal;
+  max-width: 600px;
+  margin: 0;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* =========================================================
+   H. Buttons: Filled (Links & Interactive)
+   Used by "Get Started" and "Contact Me"
+   ========================================================= */
+.btn {
+  display: inline-block;
+  background-color: #4a6b82;
+  color: #faf7f2;
+  border: 2px solid #4a6b82;
+  border-radius: 4px;
+  padding: 10px 24px;
+  margin-top: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+/* =========================================================
+   H. Buttons: Hover + Outline Option (Links & Interactive)
+   ========================================================= */
+.btn:hover {
+  background-color: #87ceeb;
+  border-color: #87ceeb;
+  color: #222222;
+}
+
+.btn-outline,
+.btn.outline {
+  background-color: transparent;
+  color: #4a6b82;
+  border: 2px solid #4a6b82;
+}
+
+.btn-outline:hover,
+.btn.outline:hover {
+  background-color: #4a6b82;
+  color: #faf7f2;
+}
+
+/* =========================================================
+   I. Features Section Layout (Layout + Spacing)
+   Three cards in centered row
+   ========================================================= */
+#features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  padding: 50px 20px 30px;
+}
+
+#features h2 {
+  width: 100%;
+  margin: 0 0 10px;
+}
+
+#features article {
+  flex: 1;
+  min-width: 220px;
+  max-width: 300px;
+  padding: 20px;
+  background-color: #faf7f2;
+  border: 1px solid #e0d8d0;
+  border-radius: 6px;
+}
+
+/* =========================================================
+   J. Typography + Colors  
+   ========================================================= */
+#features h2,
+#featured h2,
+.secondary h2,
+#contact h2 {
+  color: #4a6b82;
+  font-size: 32px;
+  letter-spacing: 1px;
+}
+
+#features h3 {
+  color: #222222;
+  font-size: 20px;
+  margin: 12px 0 8px;
+}
+
+#features p {
+  font-size: 16px;
+  margin: 0;
+}
+
+/* =========================================================
+   K. Featured Work (Spacing + Layout)
+   Centered text and centered dashboard image
+   ========================================================= */
+#featured {
+  padding: 40px 20px;
+}
+
+#featured p {
+  max-width: 800px;
+  margin: 0 auto 25px;
+  font-size: 17px;
+}
+
+#featured img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  border: 3px solid #4a6b82;
+  border-radius: 6px;
+}
+
+/* =========================================================
+   L. Secondary Content Blocks (Layout + Spacing)
+   Two cards side by side, text next to icon
+   ========================================================= */
+.secondary {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 20px;
+}
+
+.secondary section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex: 1;
+  min-width: 300px;
+  max-width: 450px;
+  padding: 25px;
+  text-align: left;
+  background-color: #ffffff;
+  border-left: 5px solid #4a6b82;
+  border-radius: 6px;
+}
+
+.secondary h2 {
+  font-size: 24px;
+  margin: 0 0 8px;
+}
+
+.secondary p {
+  margin: 0;
+}
+
+.secondary img {
+  width: 60px;
+  height: auto;
+  flex-shrink: 0;
+}
+
+/* =========================================================
+   M. Footer (Colors & Backgrounds + Layout + Spacing)
+   Contact CTA on the left, links on the right
+   ========================================================= */
+footer {
+  background-color: #4a6b82;
+  color: #faf7f2;
+  margin-top: 40px;
+  padding: 30px 30px 20px;
+}
+
+.footer_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+#contact h2 {
+  color: #faf7f2;
+  margin: 0;
+}
+
+#contact .btn {
+  background-color: #faf7f2;
+  color: #4a6b82;
+  border-color: #faf7f2;
+}
+
+#contact .btn:hover {
+  background-color: #87ceeb;
+  border-color: #87ceeb;
+  color: #222222;
+}
+
+footer nav ul {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer nav a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #faf7f2;
+  text-decoration: none;
+}
+
+footer nav a:hover {
+  color: #87ceeb;
+  text-decoration: underline;
+}
+
+footer p {
+  margin: 20px 0 0;
+  font-size: 13px;
+  color: #dde6ec;
+  text-align: center;
+}
+
+/* =========================================================
+   N. Accessibility (Links & Interactive)
+   Visible outline when tabbing through links
+   ========================================================= */
+a:focus-visible {
+  outline: 3px solid #87ceeb;
+  outline-offset: 3px;
+}

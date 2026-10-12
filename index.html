@@ -1,0 +1,125 @@
+<!-- =========================================================
+STEP 1: Add the required HTML5 skeleton
+========================================================= -->
+<!DOCTYPE html>
+<html lang="en"> 
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ebasomba</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <!-- =========================================================
+    STEP 2: Build the “top area” (site name + navigation) using simple HTML
+    ========================================================= -->
+
+<header class="top_header">
+    <h1>M.W.E</h1>
+<nav id="navbar">
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#featured">About</a></li>
+        <li><a href="#features">Work</a></li>
+        <li><a href="#contact">Contact</a></li>
+     </ul>
+</nav>
+</header>
+
+    <!-- =========================================================
+    STEP 3: Hero section + “Get Started button” as a link
+   ========================================================= -->
+<main>
+
+<section id="home" class="home">
+    <h2>Welcome!</h2>
+    <p>My name is M.W. Ebasomba. I am a student in the Information Science and Data Science programs at UW-Madison.</p>
+    <a href="#features" class ="btn">Get Started</a>
+    <!-- <img src="images/library.png" alt="A picture of a library, this serves as a representation of my ongoing explorations" width="900" height="500"> -->
+</section>
+    <!-- =========================================================
+    STEP 4: Features section (3 blocks) + featured content section
+    ========================================================= -->
+
+<section id="features">
+    <h2>Features</h2>
+      <article> 
+        <img src="images/book.svg" alt="A book icon" width="40" height="40">
+        <h3>Course Projects & Labwork</h3>
+            <p>A collection of data analysis assignments, Python scripts, and database queries built during my studies at UW-Madison.</p>
+     </article>
+    <article>
+        <img src="images/terminal.svg" alt="A terminal icon" width="40" height="40">
+        <h3>Languages & Technologies</h3>
+          <p>I am familiar with Python, HTML/CSS, Library Toolkits, and Tableau, focusing on on data cleaning, analysis, and visualization.</p>
+    </article>
+
+    <article>
+        <img src="images/compass.svg" alt="A compass icon" width="40" height="40">
+        <h3>Exploration & Interests</h3>
+          <p>Exploring public datasets, sports analytics,and modern web design trends in my free time to sharpen my analytical and critical thinking skills.</p>
+    </article>
+    </section>
+<!-- featured content -->
+ <section id="featured">
+    <h2>Featured Work</h2>
+        <p>This section showcases my core technical work and ongoing Information Science (Isci) and Data Science (Data Sci) explorations. From Python scripts and database management to interactive web design and visualizations, these featured highlights represent my hands-on approach to solving problems and translating complex information into visual insights.</p>
+            <img src="images/Dashboard.png" alt="A dashboard made using Tableau, it shows the happiness index around the world." width="900" height="500"/>
+      </section>
+    <!-- =========================================================
+    STEP 5: Two secondary content blocks + CTA section 
+    ========================================================= -->
+<!-- secondary content blocks-->
+<div class="secondary">
+    <section>
+    <div>
+    <h2>Academic Focus</h2>
+        <p>Currently coursework-focused on data structures, database design, and statistical methods. Building a foundation in interpreting complex datasets and information architecture and language.</p>
+    </div>
+     <img src="images/book-open.svg" alt="Books icon representing academic focus" width="60" height="60">
+    </section>
+
+<section>
+    <div>
+    <h2>Career Goals</h2>
+        <p>Aim to increase technical data analysis skills with hands on learning. Seeking opportunities to apply data visualization and information science skills to real-world challenges.</p>
+    </div>
+<img src="images/target.svg" alt="Target icon" width="60" height="60">
+    </section>
+</div>
+
+</main>
+    <!-- =========================================================
+    STEP 6: Footer 
+    ========================================================= -->
+<footer>
+<div class="footer_top">
+   <section id="contact" class="contact">
+      <h2>Curious?</h2>
+      <a href="mailto:m@gmail.com" class="btn">Contact Me</a>
+   </section>
+
+    <nav>
+        <ul>
+        <li><a href="#LinkedIn"> 
+            <img src="images/linkedin.svg" alt="A LinkedIn icon" width="15" height="15">
+            LinkedIn
+        </a> <!-- LinkedIn is a work in progress -->
+    </li>
+
+        <li><a href="https://github.com/underline22" target="_blank">
+            <img src="images/github.svg" alt="An icon of github" width="15" height="15">
+            GitHub</a></li>
+
+
+    <li><a href="#home">Back to Home</a></li>
+        </ul>
+    </nav>
+</div>
+      <p>&copy; Ebasomba 2026 All Rights Reserved</p> <!-- note to self: Copyright information; come back later to add java for yearly dynamically generated -->
+</footer>
+
+
+<!-- note to self: not all images were used, however they are kept for potential future use -->
+  </body>
+</html>
